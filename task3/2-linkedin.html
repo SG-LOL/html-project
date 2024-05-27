@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:sans-serif;
+            
+        }
+        #sign-in{
+            max-width: fit-content;
+            margin: auto;
+            width: 40%;
+            
+        }
+        #sign-in *{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+
+        }
+        .buttons{
+            border-radius: 24px;
+            padding: 10px;
+            box-shadow: none;
+            outline: none;
+            background-color: white;
+        }
+        #sign-in-btt{
+            background-color: #0066cc;
+            border-color: #0066cc;
+        }
+         .custom-line {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            color: #000; 
+            margin: 20px 0;
+        }
+        
+        .custom-line::before,
+        .custom-line::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #000; 
+        }
+        .custom-line::before {
+            margin-right: 10px;
+        }
+        
+        .custom-line::after {
+            margin-left: 10px;
+        }
+
+        #password,  #email-phone{
+            padding: 10px 0;
+            border: #000 1px solid;
+            border-radius: 5px;
+
+        }
+         .footer {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+             margin: 0 5%;
+        }
+        h6 a {
+            color: gray;
+            text-decoration: none;
+            font-size: 12;
+        }
+    </style>
+    
+</head>
+<body>
+    <img src="Screenshot 2024-05-27 131806.png" alt="">
+    <div id="sign-in">
+        <h1>Sign in</h1>
+        <p>stay updated on our professional world</p>
+        <form action="">
+            <input type="text" name="email or phone" id="email-phone" placeholder="Email or Phone"><br>
+            <input type="password" name="password" id="password" placeholder="Password"><br>
+            <a href="">forgot password</a><br>
+            <button class="buttons" id="sign-in-btt" >Sign in</button>
+            <p class="custom-line">or</p>
+            <button class="buttons">sign in with Apple</button>
+            <p>new to linkedIn? <a href="">Join now</a></p>
+        </form>
+    </div>
+    <footer class="footer">
+        <h6><a href="">Linked in © 2021</a></h6>
+        <h6><a href="">User agreement</a></h6>
+        <h6><a href="">Privacy Policy</a></h6>
+        <h6><a href="">Community Guildlines</a></h6>
+        <h6><a href="">Cookie Policy</a></h6>
+        <h6><a href="">Copyright Policy</a></h6>
+        <h6><a href="">Send FeedBack</a></h6>
+        <h6><a href="">Language</a></h6>
+    </footer>
+</body>
+</html>

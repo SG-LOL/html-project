@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+            background-color:  #57caaa;
+            /* Adjust the colors as needed */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #sign-in {
+            background-color: white;
+            max-width: fit-content;
+            margin: 10% auto;
+            width: 40%;
+            padding: 2% 5%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            scale: 1.2;
+
+        }
+
+        #sign-in * {
+            margin: 5% 0;
+            width: 100%;
+        }
+
+        #email-phone,
+        #password {
+            border: none;
+            border-bottom: #000000 1px solid;
+            padding: 4% 0;
+        }
+        #sign-in input[type="text"]:focus, 
+        #sign-in input[type="password"]:focus {
+            border: none;
+            border-bottom: #2e6656 1px solid;
+            outline: none;
+        }
+
+        h1, form {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            box-shadow: none;
+            outline: none;
+            background-color: #2e6656;
+            border: none;
+            color: white;
+            border-radius: 5px;
+
+        }
+        a{
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sign-in">
+        <h1>User login</h1>
+        <form action="">
+            <input type="text" name="email or phone" id="email-phone" placeholder="Email"><br>
+            <input type="password" name="password" id="password" placeholder="Password"><br>
+            <button class="buttons" id="sign-in-btt">Sign in</button>
+            <a href="">forget password?</a>
+        </form>
+    </div>
+</body>
+
+</html>

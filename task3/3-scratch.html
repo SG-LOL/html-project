@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:sans-serif;
+            color: rgb(65, 63, 63);
+        }
+        #login{
+            max-width: fit-content;
+            margin: 10% auto ;
+            width: 40%;
+            scale: 1.3;
+            
+        }
+
+        #login *{
+            margin: 10px;
+            width: 100%;
+        }
+        .buttons{
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: none;
+            background-color: rgb(41, 143, 228);
+            border-color: rgb(41, 143, 228);
+        
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 5%;
+        }
+        .left-headers{
+            flex-grow: 1;
+        }
+        .right-headers{
+            margin-right: 2%;
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="left-headers">scratch</h2>
+        <h3 class="right-headers" style="color: gray;">signup</h3>
+        <h3 class="right-headers">login</h3>
+    </header>
+    <div id="login">
+        <form action="">
+            <label for="email-phone">Email</label><br>
+            <input type="text" name="email or phone" id="email-phone" ><br>
+            <label for="password">password</label><br>
+            <input type="password" name="password" id="password" ><br>
+            <button class="buttons" id="sign-in-btt">login</button><br>
+        </form>
+    </div>
+</body>
+</html>

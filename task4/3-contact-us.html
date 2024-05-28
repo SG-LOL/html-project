@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .signup {
+            margin: 10% 0;
+            grid-column: 2 / 3;
+            background-color: #1abeff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 20%;
+            height: 40px;
+            margin-bottom: 10px;
+            align-self: flex-start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #055abd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        label {
+            margin-bottom: 5px;
+            text-align: left;
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px #a7d0ff solid;
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px #a7d0ff solid;
+            border-radius: 5px;
+        }
+            @media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }}
+    @media (max-width: 600px) {
+        .signup {
+            
+            grid-column: 1 / 1;
+
+        }
+}
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="signup">
+            <h1>Contact Us</h1>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="full name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="email address">
+                </div>
+                <div class="form-group">
+                    <input type="number" id="phone" placeholder="phone">
+                </div>
+                <div class="form-group">
+                    <textarea name="massege" id="massege"></textarea>
+                </div>
+                <div class="form-group">
+                    <button>register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

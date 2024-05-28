@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+            display: grid;
+            grid-template-rows: 1fr 20% 1fr 10%;
+            grid-template-areas:
+                "banner"
+                "header"
+                "paragraph"
+                "footer";
+            grid-gap: 10px;
+            padding: 10px;
+            row-gap: 0PX;
+        }
+        .banner{
+            grid-area: banner;
+            background-color: brown;
+        }
+        .header{
+            grid-area: header;
+            background-color: burlywood;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+        .paragraph{
+            grid-area: paragraph;
+            background-color: burlywood;
+            
+        }
+        .paragraph p {
+            color: brown;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            margin: 0 3%;
+
+        }
+        .item a{
+            color: green;
+            text-decoration: none;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: burlywood;
+
+        }
+
+</style>
+<body>
+    <div class="grid-container">
+        <div class="banner">
+            <h1>THIS IS THE BANNER TEXT</h1>
+        </div>
+        <div class="header">
+            <h4 class="item"><a href="">HOME</a></h4>
+            <h4 class="item"><a href="">INFORMATION</a></h4>
+            <h4 class="item"><a href="">CONTACT</a></h4>
+            <h4 class="item"><a href="">HUBPAGES</a></h4>
+            
+
+        </div>
+        <div class="paragraph">
+            <h2>This Is My Paragrah Header</h2>
+            <p>This is where I am going to put useful and informative text about my website.</p>
+            <p>This is where I am can place even more information about my website.</p>
+            
+
+        </div>
+        <footer class="footer">
+            <p>This is where I can place a copyright logo like this ©</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

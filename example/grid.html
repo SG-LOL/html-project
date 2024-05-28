@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 20% 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "sidebar content1 content1"
+                "sidebar content2 content2"
+                "footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .content1 {
+            grid-area: content1;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        .content2 {
+            grid-area: content2;
+            background-color: blueviolet;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightgrey;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "sidebar sidebar"
+            "content1 content1"
+            "content2 content2"
+            "footer footer";
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content1">Content 1</div>
+        <div class="content2">Content 2</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

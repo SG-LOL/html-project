@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,49 @@
     <style>
         html {
             height: 100%;
-            background: linear-gradient(to bottom, #57caaa, #95deaf); /* Adjust the colors as needed */
+            background: linear-gradient(to bottom, #57caaa, #95deaf);
+            /* Adjust the colors as needed */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         #sign-in {
             background-color: white;
-            max-width: fit-content;
+            max-width: 90%;
             margin: 10% auto;
             width: 40%;
             border-radius: 10px;
             padding: 5%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            scale: 1.2;
+            transform: scale(1.2);
         }
+
         #sign-in * {
             margin: 5% 0;
         }
-        #show-pass, #show-pass * {
+
+        #show-pass,
+        #show-pass * {
             width: fit-content;
         }
-        #sign-in h1, #sign-in p {
+
+        #sign-in h1,
+        #sign-in p {
             text-align: center;
         }
-        #email-phone, #password {
+
+        #email-phone,
+        #password {
             border: rgb(180, 178, 178) 1px solid;
             width: 100%;
             padding: 4% 0;
         }
+
         form {
             text-align: center;
         }
+
         button {
             padding: 10px;
             box-shadow: none;
@@ -48,14 +60,33 @@
             color: white;
             display: inline-block;
             border-radius: 5px;
-            
         }
-        a{
+
+        a {
             color: #57caaa;
         }
-        
+
+
+
+        @media (max-width: 480px) {
+            #sign-in {
+                width: 80%;
+                padding: 15%;
+                transform: scale(1);
+            }
+
+            button {
+                padding: 6px;
+            }
+
+            #email-phone,
+            #password {
+                padding: 2% 0;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div id="sign-in">
         <h1>Login</h1>
@@ -68,11 +99,9 @@
             </label><br>
             <button class="buttons" id="sign-in-btt">Sign in</button>
             <p>forgot <a href="">Username</a>/ <a href="">password</a>?</p>
-            <p>Don't have an account?<a href="">Sign up</a></p>
-            
-            
-            
+            <p>Don't have an account? <a href="">Sign up</a></p>
         </form>
     </div>
 </body>
+
 </html>
